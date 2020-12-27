@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+//import logo from './logo.svg';
+//import './App.css';
+import FC from './Components/funcComp.js'
+import ClassComp from './Components/classComp.js'
+import Click from './Components/click.js'
+import MyClass from './Components/counter.js'
+import formatName from "./Components/jsxTutorial";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>This is according to the video</p>
+      <h1>Enjoy!</h1>
+      <FC />
+      <ClassComp />
+      <Click />
+      <MyClass />
+
     </div>
   );
 }
