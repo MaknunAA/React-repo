@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UpdatedClickComp from './highOrder.js' 
 
 export class MyClass extends Component {
     constructor (props){
@@ -16,9 +17,9 @@ export class MyClass extends Component {
     render(){
         const { count } = this.state;
         return (
-            <button onClick = {this.countClickNeg}> Negative count is {count} </button>
+            <button onClick = {this.countClickNeg}> {this.props.name} has a  Negative count of {count} </button>
         )
     }
 }
 
-export default MyClass;
+export default UpdatedClickComp(MyClass);
