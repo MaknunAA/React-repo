@@ -4,7 +4,6 @@ import FC from './Components/funcComp.js'
 import ClassComp from './Components/classComp.js'
 import Click from './Components/click.js'
 import MyClass from './Components/counter.js'
-import formatName from "./Components/jsxTutorial";
 function App() {
   return (
     <div>
